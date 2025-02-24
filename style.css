@@ -17,7 +17,7 @@ body, p, h1, ul, li, blockquote {
 }
 
 img {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .estrutura {
@@ -32,10 +32,40 @@ img {
 
 .header {
     grid-area: header;
+    background: linear-gradient(135deg, #8844ee, #B07DFD);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 1.125rem;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.header nav a:hover {
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .sidenav {
-    grid-area: sidnav;
+    grid-area: sidenav;
 }
 
 .content {
